@@ -3,14 +3,35 @@ using namespace std;
 
 int main(){
 
-    int a;
-    cin>>a;
-
-    if(a%5==0){
-        cout<<a/5<<endl;
-    }else{
-        cout<<a/5+1<<endl;
+    int k,n,w;
+    cin>>k>>n>>w;
+    
+    int total=0;
+    
+    for(int i=1;i<=w;i++){
+        total=total+(i*k);
     }
-
+    
+    if(n>total){
+        cout<<0<<endl;
+    }else{
+        cout<<total-n<<endl;
+    }
+    
+    
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
